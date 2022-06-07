@@ -1,0 +1,28 @@
+.list-group {
+  @apply w-full flex flex-col gap-2;
+
+  &-item {
+    @apply flex justify-between items-center select-none px-3 py-4 rounded text-xl border border-green;
+
+    button {
+      @apply w-24 h-10 bg-tertiary rounded;
+      @apply hover:bg-green hover:border-2 hover:border-tertiary hover:text-tertiary transition-all;
+    }
+
+    &-success {
+      @apply bg-green;
+
+      .task {
+        @apply line-through;
+      }
+    }
+
+    &-wrapper {
+      @apply cursor-pointer flex items-center;
+
+      .form-checkbox {
+        @apply mr-3 h-5 w-5;
+      }
+    }
+  }
+}

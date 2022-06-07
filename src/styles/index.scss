@@ -1,0 +1,12 @@
+.App {
+  @apply bg-primary flex justify-center;
+
+  .wrapper {
+    @apply h-screen flex flex-col items-center justify-center gap-5 w-80;
+    @apply md:w-96;
+  
+    &-header {
+      @apply text-2xl;
+    }
+  }
+}

@@ -1,7 +1,18 @@
+import CompleteItems from 'components/CompleteItems';
+import TodoForm from 'components/TodoForm';
+import TodoList from 'components/TodoList';
+
+import 'styles/index.scss';
+
 function App() {
   return (
-    <div className="text-orange-700">
-      hello world
+    <div className="App">
+      <div className='wrapper'>
+        <h1 className='wrapper-header'>My Todo List</h1>
+        <TodoForm />
+        <TodoList />
+        <CompleteItems />
+      </div>
     </div>
   );
 }

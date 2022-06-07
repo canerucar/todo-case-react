@@ -1,0 +1,17 @@
+.form {
+  @apply flex flex-col gap-3;
+
+  &-input {
+    @apply w-80 h-10 p-3 rounded;
+    @apply md:w-96;
+  }
+
+  &-button {
+    @apply h-10 rounded bg-secondary text-xl;
+    @apply hover:bg-green hover:border-2 hover:border-tertiary hover:text-tertiary transition-all;
+  }
+
+  &-error {
+    @apply text-tertiary;
+  }
+}
