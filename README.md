@@ -17,9 +17,9 @@ yarn install
 #or
 npm install
 
-yarn dev
+yarn start
 # or
-npm run dev
+npm run start
 ```
 
 Screenshot of the project : <br> <br>
