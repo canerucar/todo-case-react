@@ -7,7 +7,6 @@ export const getTodosAsync = createAsyncThunk(
 
     if (resp.ok) {
       const todos = await resp.json();
-      //console.log(todos);
       return { todos };
     }
   }

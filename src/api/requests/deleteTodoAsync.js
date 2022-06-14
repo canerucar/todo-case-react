@@ -8,7 +8,6 @@ export const deleteTodoAsync = createAsyncThunk(
     });
 
     if (resp.ok) {
-      console.log('payload: ', payload);
       return { id: payload.id };
     }
   }

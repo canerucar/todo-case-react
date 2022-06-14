@@ -1,27 +1,54 @@
+@import 'src/styles/variables.scss';
+
 .list-group {
-  @apply w-full flex flex-col gap-2;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.5rem;
 
   &-item {
-    @apply flex justify-between items-center select-none px-3 py-4 rounded text-xl border border-green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+    border-radius: 0.25rem;
+    padding: 1rem 0.75rem;
+    font-size: 1.25rem;
+    border: 1px solid $green;
 
     button {
-      @apply w-24 h-10 bg-tertiary rounded;
-      @apply hover:bg-green hover:border-2 hover:border-tertiary hover:text-tertiary transition-all;
+      width: 6rem;
+      height: 2.5rem;
+      background-color: $tertiary;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      font-weight: 500;
+
+      &:hover {
+        background-color: $green;
+        border: 2px solid $tertiary;
+        color: $tertiary;
+        transition: 300ms all;
+      }
     }
 
     &-success {
-      @apply bg-green;
+      background-color: $green;
 
       .task {
-        @apply line-through;
+        text-decoration: line-through;
       }
     }
 
     &-wrapper {
-      @apply cursor-pointer flex items-center;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
 
       .form-checkbox {
-        @apply mr-3 h-5 w-5;
+        margin-right: 0.75rem;
+        height: 1.25rem;
+        width: 1.25rem;
       }
     }
   }

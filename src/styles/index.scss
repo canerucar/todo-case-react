@@ -1,12 +1,22 @@
+@import './reset.scss';
+@import './variables.scss'; 
+
 .App {
-  @apply bg-primary flex justify-center;
+  background-color: $primary;
+  display: flex;
+  justify-content: center;
 
   .wrapper {
-    @apply h-screen flex flex-col items-center justify-center gap-5 w-80;
-    @apply md:w-96;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   
     &-header {
-      @apply text-2xl;
+      font-size: 24px;
+      font-weight: 500;
     }
   }
 }

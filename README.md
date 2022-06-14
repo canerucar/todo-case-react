@@ -4,7 +4,7 @@
 
 ### Technologies I use
 
-#### `React, Redux Toolkit, TailwindCSS, SASS, json-server`
+#### `React, Redux Toolkit, SASS, json-server`
 
 ### SETUP 🚀🚀🚀
 
