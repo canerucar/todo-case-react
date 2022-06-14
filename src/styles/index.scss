@@ -1,5 +1,5 @@
-@import './reset.scss';
-@import './variables.scss'; 
+@import "./reset.scss";
+@import "./variables.scss";
 
 .App {
   background-color: $primary;
@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-  
+
     &-header {
       font-size: 24px;
       font-weight: 500;
